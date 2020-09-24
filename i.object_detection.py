@@ -1,6 +1,8 @@
 '''
 Object detection using HSV colour space.
-Detecting specific color balls only
+1. Detecting specific color balls (Commented)
+2. Detecting specific colours from video camera
+By changing the different bars on the trackbar, You can filter out different colours
 '''
 import cv2
 import numpy as np

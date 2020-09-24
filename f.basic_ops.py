@@ -1,3 +1,6 @@
+'''
+File for showing some basic operations done on images
+'''
 import cv2
 
 img = cv2.imread('data/messi5.jpg')

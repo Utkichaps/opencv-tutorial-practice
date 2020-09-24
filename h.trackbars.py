@@ -1,5 +1,5 @@
 '''
-Program to put trackbar
+Program to add trackbars which can change the colour in a given image.
 '''
 import numpy as np
 import cv2

@@ -1,3 +1,6 @@
+'''
+Bitwise operations done on the files
+'''
 import cv2
 import numpy as np
 
