@@ -36,14 +36,14 @@ for i in range(6): #6 levels
     gp_orange.append(orange_layer)
 
 #Generate laplacian pyramid for apple and orange
-apple_copy = gp_apple[-1]
+apple_copy = gp_apple[5]
 lp_apple = [apple_copy]
 for i in range(5,0,-1): #6 levels
     gaussian_expanded = cv2.pyrUp(gp_apple[i])
     laplacian = cv2.subtract(gp_apple[i-1],gaussian_expanded)
     lp_apple.append(laplacian)
 
-orange_copy = gp_orange[-1]
+orange_copy = gp_orange[5]
 lp_orange = [orange_copy]
 for i in range(5,0,-1): #6 levels
     gaussian_expanded = cv2.pyrUp(gp_orange[i])
@@ -63,6 +63,7 @@ for apple_lap, orange_lap in zip(lp_apple,lp_orange):
 apple_orange_reconstruct = apple_orange_pyramid[0]
 for i in range(1, 6):
     apple_orange_reconstruct = cv2.pyrUp(apple_orange_reconstruct)
+    print(apple_orange_pyramid[i].shape,apple_orange_reconstruct.shape)  
     apple_orange_reconstruct = cv2.add(apple_orange_pyramid[i], apple_orange_reconstruct)
 
 cv2.imshow('apple',apple)
