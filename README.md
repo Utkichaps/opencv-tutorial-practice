@@ -1,6 +1,6 @@
 # OpenCV Tutorial programs
 
-This repository consists of ordered and commented OpenCV tutorial program files (Along with the OpenCV data images/videos) which I used for my own practice. I suggest viewing these in an IDE like PyCharm so all the parameters of the different functions are shown properly.      
+This repository consists of ordered and commented OpenCV tutorial program files (Along with the OpenCV data images/videos) which I used for my own practice. I recommend viewing these in an IDE like PyCharm so that all the parameters of the different OpenCV functions are shown properly and for the general layout of the file (which includes a lot of comments).      
 
 The link to the youtube tutorial by [**ProgrammingKnowledge**][chan] is [here][tut].
 
